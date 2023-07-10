@@ -2,9 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\Admin\ProjectController;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+
 
 class DatabaseSeeder extends Seeder
 {
@@ -22,6 +23,6 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        $this->call([ProjectController::class]);
+        $this->call([ProjectSeeder::class]);
     }
 }
